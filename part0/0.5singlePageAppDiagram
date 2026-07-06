@@ -1,0 +1,12 @@
+```mermaid
+sequenceDiagram
+participant User
+participant Webpage
+
+User->>Webpage: Opens a Single Page App Webpage
+create participant Server
+Webpage->>Server: Requests 1 HTML page from the Server to display, instead of fetching them seperately
+Server->>Webpage: Prepares and gives 1 HTML page, manipulated by JavaScript code tha executes in the browser.
+Webpage->>User: Loads the webpage
+
+```
